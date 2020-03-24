@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Heading</title>
+    <style>
+        .body {
+            font-family: sans-serif;
+        }
+        img {
+            width: 100%;
+            background-color: rgb(34, 159, 231);
+            border-radius: 10px 10px 10px 10px;
+        }
+        div#contener1 {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+        }
+        div#galerija {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap:4px;
+        }
+        div.box {
+            display: grid;
+            width: 150px;
+            border: solid 0px;
+        }
+        figcaption {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1024px){
+             div#galerija {
+                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+             }
+        }
+        @media screen and (max-width: 768px){
+            div#galerija{
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 0 auto;
+            }  
+        }
+        @media screen and ( max-width: 414px){
+            div#contener1{
+                margin: auto auto;
+            }
+            div#galerija{
+                grid-template-columns: 1fr;
+            }
+            h1{
+                font-size: 21px;
+            }
+        }
+    
+            
+      
+
+
+    </style>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div  id="contener1">
+            <h1>Gallery Heading</h1>
+        <div id="galerija">
+            <div class="box">
+                 <img src="image.png">
+                 <figcaption>Image Title </figcaption>
+                
+            </div>
+            <div class="box">
+                 <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+             </div>
+            <div class="box">
+                 <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box"> 
+                 <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box"> 
+                  <img src="image.png" >
+                  <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box">
+                  <img src="image.png" >
+                  <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box"> 
+                  <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box"> 
+                 <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box">
+                  <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+            <div class="box">
+                  <img src="image.png" >
+                 <figcaption>Image Title </figcaption>
+            </div>
+        </div> 
+            <div id="paragraf">
+
+             <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis massa urna, sit amet lacinia quam lacinia nec. 
+                Duis ligula ligula, rhoncus sed velit sed, tincidunt dignissim nunc. Quisque eget lacus pulvinar, venenatis erat a, tempus eros. 
+                Suspendisse bibendum odio non mi ultricies volutpat. Praesent mattis erat eu cursus vulputate. 
+                Fusce eu lacinia tellus. Vivamus elementum maximus neque, porta volutpat sem mattis lacinia. 
+                Nullam sed mauris mi. Aliquam ac odio placerat ligula venenatis molestie vel vel magna.
+                Nam vel nisl blandit, congue nisl id, fermentum sapien. Phasellus eget justo a velit rutrum viverra.
+                Maecenas vulputate turpis turpis, quis condimentum eros gravida a. Nunc placerat purus non posuere posuere.        
+             </p>
+            </div>
+    </div>
+</body>
+</html>
